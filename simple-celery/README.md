@@ -11,8 +11,8 @@
 
 ## Asynchronous Processing in Celery
 
-- **main.py** - Showcases an ordinary implementation of a time consuming operation.
-- **task.py** - This example implements main.py above in an asycnhronous manner using Celery.
+- [main.py](./main.py) - Showcases an ordinary implementation of a time consuming operation.
+- [task.py](./task.py) - This example implements main.py above in an asycnhronous manner using Celery.
 
 ```shell
 celery -A task worker --loglevel=info
@@ -20,7 +20,7 @@ celery -A task worker --loglevel=info
 
 ## Periodic Tasks in Celery
 
-- **periodic.py** - This example implements a timed periodic task that runs after every two seconds.
+- [periodic.py](./periodic.py) - This example implements a timed periodic task that runs after every two seconds.
 
 ```shell
 celery -A periodic beat --loglevel=info
@@ -44,3 +44,5 @@ celery -A periodic worker --loglevel=info
 ```
 
 ## Crontabs in Celery
+
+- [birthdays.py][./birthdays.py] - This example implements a birthday notification system using Celery's crontab feature.
